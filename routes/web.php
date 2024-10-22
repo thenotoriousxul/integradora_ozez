@@ -25,4 +25,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/dashmenu', function() {
+    return view('dashmenu');
+});
+Route::get('/inventario', function() {
+    return view('inventario');
+});
+Route::get('/opiniones', function() {
+    return view('opiniones');
+});
+Route::get('/gesordenes', function() {
+    return view('gesordenes');
+});
+Route::get('/historial', function() {
+    return view('historial');
+});
 require __DIR__.'/auth.php';
