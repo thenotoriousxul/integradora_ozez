@@ -5,6 +5,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('welcome');
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+Route::get('/products', function() {
+    return view('products');
 });
 
 Route::get('/dashboard', function () {
