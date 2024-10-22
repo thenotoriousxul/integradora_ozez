@@ -158,7 +158,7 @@ tr:hover {
               <td>1741D</td>
               <td>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+                  src="{{asset('img/playera.jpeg')}}"
                   alt="Dollan watch"
                   class="product-img"
                 />
@@ -172,7 +172,7 @@ tr:hover {
               <td>1742D</td>
               <td>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+                  src="{{asset('img/playera.jpeg')}}"
                   alt="Dollan watch"
                   class="product-img"
                 />
@@ -186,7 +186,7 @@ tr:hover {
               <td>1743D</td>
               <td>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+                  src="{{asset('img/playera.jpeg')}}"
                   alt="Dollan watch"
                   class="product-img"
                 />
@@ -200,7 +200,7 @@ tr:hover {
               <td>1744D</td>
               <td>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+                  src="{{asset('img/playera.jpeg')}}"
                   alt="Dollan watch"
                   class="product-img"
                 />
@@ -214,7 +214,7 @@ tr:hover {
               <td>1745D</td>
               <td>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+                 src="{{asset('img/playera.jpeg')}}"
                   alt="Dollan watch"
                   class="product-img"
                 /> 
@@ -233,7 +233,7 @@ tr:hover {
       </main>
       <aside class="visualizer">
         <img
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UuvB2RWizqyBLsQfaIscAdMnnKwsgq.png"
+          src="{{asset('img/playera.jpeg')}}"
           alt="Dollan Watch"
         />
         <h2>1741D - Dollan Watch</h2>
