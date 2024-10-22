@@ -124,9 +124,7 @@
 </head>
 <body>
 <header>
-    <nav>
-        <!--@ include (partials.nav)-->
-    </nav>
+        @include('partials.nav')
 </header>
 <main>
     <div class="imginicio">
