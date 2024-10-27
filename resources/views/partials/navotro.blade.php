@@ -68,8 +68,10 @@
             <img src="{{ asset('img/ozeztrc.png') }}" alt="Logo de OZEZ" style="height: 100px; margin-right: 10px;">
         </div>
         <nav>
+        <a href="{{ route('welcome') }}">INICIO</a>
             <a href="{{ route('products') }}">CATÁLOGO</a>
             <a href="">PERSONALIZACIÓN</a>
+            
         </nav>
         <div class="header-right">
             <a href="{{ route('login') }}" class="icon-button"><i class="bi bi-person-circle"></i></a>

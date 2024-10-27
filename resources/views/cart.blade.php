@@ -150,8 +150,8 @@ td {
 .product-info img {
     margin-right: 20px;
     border-radius: 4px;
-    width: 150px; /* Ajusta el ancho deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 150px; 
+    height: auto; 
 }
 
 .product-name {
@@ -238,7 +238,6 @@ td {
     <main class="container">
         <div class="cart-header">
             <h2>Tus Productos</h2>
-            <a href="{{ route('welcome')}}" class="back-link">Volver a la tienda</a> <!-- volver a welcome -->
         </div>
 
         <div class="cart-content">
