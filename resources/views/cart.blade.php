@@ -226,53 +226,6 @@ td {
     color: #666;
     font-size: 14px;
 }
-
-footer {
-    background-color: #000;
-    padding: 40px 0 20px;
-    margin-top: 40px;
-    color: #fff;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
-}
-
-.footer-column h3 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #9e9b9b;
-    letter-spacing: 1px;
-}
-
-.footer-column a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 8px;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.footer-column a:hover {
-    color: #938b8b;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 12px;
-    color: #666;
-}
     </style>
 
 
@@ -357,33 +310,6 @@ footer {
             </div>
         </div>
     </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Ayuda</h3>
-                    <a href="#">Contacto</a>
-                    <a href="#">Envíos</a>
-                    <a href="#">Devoluciones</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Acerca de</h3>
-                    <a href="#">Nuestra historia</a>
-                    <a href="#">Tiendas</a>
-                    <a href="#">Trabaja con nosotros</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Legal</h3>
-                    <a href="#">Términos y condiciones</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Cookies</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 OZEZ. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    @include('partials.footer')
 </body>
 </html>
