@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -9,11 +8,11 @@ Route::get('/', function () {
 
 Route::get('/cart', function () {
     return view('cart');
-});
+})->name('cart');
 
 Route::get('/products', function() {
     return view('products');
-});
+})->name('products');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -27,17 +26,22 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/dashmenu', function() {
     return view('dashmenu');
-});
+})->name('dashmenu');
+
 Route::get('/inventario', function() {
     return view('inventario');
-});
+})->name('inventario');
+
 Route::get('/opiniones', function() {
     return view('opiniones');
-});
+})->name('opiniones');
+
 Route::get('/gesordenes', function() {
     return view('gesordenes');
-});
+})->name('gesordenes');
+
 Route::get('/historial', function() {
     return view('historial');
-});
+})->name('historial');
+
 require __DIR__.'/auth.php';

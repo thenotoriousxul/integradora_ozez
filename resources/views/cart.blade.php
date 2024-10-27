@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>cart</title>
     <script src="{{ asset('js/cart.js') }}" defer></script>
+    <link rel="preload" href="{{ asset('img/iniciobynimg.jpeg') }}" as="image">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-4n4n6pZn3b9Q8sX8MDZf4ExsU5Vy1HdNeNe8hFcDzOUdKnGq07MI6+NnWbH/zZik" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
 
@@ -47,30 +52,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-nav {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-    }
-
-    nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 12px;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: color 0.3s;
-    }
-
-    nav a:hover {
-        color: #82afc7;
-    }
-}
 
 .icon-button {
     background: none;
@@ -297,28 +278,7 @@ footer {
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-left">
-                <button class="icon-button"><i class="icon-search"></i></button>
-                <h1>OZEZ</h1>
-            </div>
-            <nav>
-                <a href="#">LANZAMIENTOS</a>
-                <a href="#">MEN'S</a>
-                <a href="#">WOMEN'S</a>
-                <a href="#">Ofertas</a>
-                <a href="#">Personalizacion</a>
-            </nav>
-            <div class="header-right">
-                <button class="icon-button"><i class="icon-user"></i></button>
-                <button class="icon-button cart">
-                    <i class="icon-cart"></i>
-                    <span class="cart-count">3</span>
-                </button>
-            </div>
-        </div>
-    </header>
+ @include('partials.navotro')
 
     
 
