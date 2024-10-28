@@ -39,3 +39,33 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    const inventoryItem = document.getElementById('inventario-item');
+    const inventorySubmenu = document.getElementById('inventario-submenu');
+    
+    inventoryItem.addEventListener('click', function(e) {
+      e.preventDefault();
+      inventorySubmenu.style.display = inventorySubmenu.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+  
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const inventoryItem = document.getElementById('ordenes');
+    const inventorySubmenu = document.getElementById('ordenes-submenu');
+    
+    inventoryItem.addEventListener('click', function(e) {
+      e.preventDefault();
+      inventorySubmenu.style.display = inventorySubmenu.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const inventoryItem = document.getElementById('configuracion');
+    const inventorySubmenu = document.getElementById('configuracion-submenu');
+    
+    inventoryItem.addEventListener('click', function(e) {
+      e.preventDefault();
+      inventorySubmenu.style.display = inventorySubmenu.style.display === 'none' ? 'block' : 'none';
+    });
+  });
