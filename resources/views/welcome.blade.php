@@ -184,7 +184,7 @@
 
     <main>
         <div id="inicio" class="imginicio">
-            <img class="main" src="{{ asset('img/inicioimg.jpeg') }}" alt="Imagen de inicio de Ozez">
+            <img class="main" src="{{ asset('img/iniciobynimg.jpeg') }}" alt="Imagen de inicio de Ozez">
         </div>
 
         <div class="animacion">
