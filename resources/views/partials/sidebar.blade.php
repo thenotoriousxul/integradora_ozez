@@ -11,7 +11,7 @@
   background-color: #1f2937;
   width: 250px;
   padding: 25px;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   transition: all 0.4s ease-in-out;
   overflow-y: auto;
@@ -19,6 +19,8 @@
   box-shadow: 3px 0 15px rgba(0, 0, 0, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0 10px 10px 0;
+  display: flex; 
+  flex-direction: column; 
 }
 .sidebar-container.hidden {
   transform: translateX(-280px);
@@ -26,6 +28,7 @@
 .logo-container {
   text-align: center;
   margin-bottom: 30px;
+    flex-shrink: 0; 
 }
 .logo img {
   max-width: 90%;
@@ -63,6 +66,7 @@
     box-shadow 0.4s ease;
   position: relative;
 }
+
 .item-side:hover {
   background-color: #374151;
   box-shadow: 0 10px 20px rgba(107, 91, 255, 0.6);
@@ -76,6 +80,7 @@
   color: #7c3aed;
   transition: color 0.3s ease;
 }
+
 .item-side:hover i {
   color: #9f7aea;
 }
@@ -151,18 +156,46 @@
 }
 
 .title-dash {
-  font-size: 40px;
+  font-size: 25px;
   margin-left: 10px;
   font-weight: lighter;
 }
 
-.user-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin-right: 10px;
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
 }
+.eliconuser
+{
+  margin-right:30px; 
+}
+.menu-container {
+  flex-grow: 1; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+
+
+.menu-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.submenu
+{
+  display: none; 
+  padding-left: 20px;
+}
+.abajo
+{
+  margin-left: auto;
+}
+
 @media (max-width: 768px) {
   .sidebar-container {
     transform: translateX(-100%);
@@ -192,6 +225,7 @@
         <div class="logo-container">
           <p class="logo"><img src="{{asset('img/ozeztrc.png')}}" alt="Logo" /></p>
         </div>
+        <div class="menu-container">
         <div class="page-container">
           <h3 class="title-section">Menú</h3>
           <a class="item-side" href="index.html"
@@ -201,10 +235,21 @@
         </div>
         <div class="page-container">
           <h3 class="title-section">Administración</h3>
-          <a class="item-side" href="inventario.html"
+          <a id="inventario-item" class="item-side" href="inventario.html"
             ><i class="fas fa-box"></i
-            ><span class="sidebar-text">Inventario</span></a
+            ><span class="sidebar-text">Inventario</span>
+            <i class="fas fa-chevron-down abajo"></i></a
           >
+          <div id="inventario-submenu" class="submenu">
+            <a class="item-side sub" href="inventario-lista.html">
+              <i class="fas fa-list"></i>
+              <span class="sidebar-text">Lista de Inventario</span>
+            </a>
+            <a class="item-side sub" href="agregar-producto.html">
+              <i class="fas fa-plus"></i>
+              <span class="sidebar-text">Agregar Producto</span>
+            </a>
+          </div>
           <a class="item-side" href="reseñas.html"
             ><i class="fas fa-clipboard-list"></i
             ><span class="sidebar-text">Opiniones</span></a
@@ -213,35 +258,68 @@
             ><i class="fas fa-history"></i
             ><span class="sidebar-text">Historial</span></a
           >
-          <a class="item-side" href="ordenes.html"
+          <a id="ordenes" class="item-side" href="ordenes.html"
             ><i class="fas fa-truck"></i
-            ><span class="sidebar-text">Gestor de Ordenes</span></a
+            ><span class="sidebar-text">Gestor de Ordenes</span>
+            <i class="fas fa-chevron-down abajo" ></i></a
           >
+          <div id="ordenes-submenu" class="submenu">
+            <a class="item-side sub" href="inventario-lista.html">
+              <i class="fas fa-list"></i>
+              <span class="sidebar-text">Lista de Ordenes</span>
+            </a>
+            <a class="item-side sub" href="agregar-producto.html">
+              <i class="fas fa-plus"></i>
+              <span class="sidebar-text">Agregar Orden</span>
+            </a>
+          </div>
         </div>
         <div class="page-container">
           <h3 class="title-section">Configuración</h3>
-          <a class="item-side" href=""
+          <a id="configuracion" class="item-side" href=""
             ><i class="fas fa-cogs"></i
-            ><span class="sidebar-text">Configuración</span></a
+            ><span class="sidebar-text">Ajustes</span>
+            <i class="fas fa-chevron-down abajo" ></i></a
           >
+          <div id="configuracion-submenu" class="submenu">
+            <a class="item-side sub" href="inventario-lista.html">
+              <i class="fas fa-list"></i>
+              <span class="sidebar-text">Ver Usuarios</span>
+            </a>
+            <a class="item-side sub" href="agregar-producto.html">
+              <i class="fas fa-plus"></i>
+              <span class="sidebar-text">Agregar Usuario</span>
+            </a>
+          </div>
           <a class="item-side" href=""
             ><i class="fas fa-globe"></i
             ><span class="sidebar-text">Página principal</span></a
           >
         </div>
+      </div>
       </aside>
 
       <div class="overlay" id="overlay"></div>
 
       <main class="dash-body" id="dash-body">
-        <button id="raya" class="raya"><i class="fas fa-bars"></i></button>
+        
   
         <header class="header">
+          <button id="raya" class="raya"><i class="fas fa-bars"></i></button>
           <div class="title-dashh">
             <h1 class="title-dash">{{ $title ?? 'Default Dashboard Title' }}</h1>
           </div>
-          <div class="user-icon"></div>
+        
+          <div class="eliconuser">
+            <i class="fas fa-user fa-lg"></i>
+          </div>
+         
+
+    
         </header>
+        <script src="{{ asset('js/sidebar.js') }}" defer></script>
+
+       
 
 </body>
 </html>

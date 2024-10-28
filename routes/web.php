@@ -44,4 +44,12 @@ Route::get('/historial', function() {
     return view('historial');
 })->name('historial');
 
+Route::get('/formproducto', function() {
+    return view('formularioproducto');
+})->name('historial');
+
+Route::get('/formorden', function() {
+    return view('formularioorden');
+})->name('historial');
+
 require __DIR__.'/auth.php';
