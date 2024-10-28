@@ -228,47 +228,47 @@
         <div class="menu-container">
         <div class="page-container">
           <h3 class="title-section">Menú</h3>
-          <a class="item-side" href="index.html"
+          <a class="item-side" href=""
             ><i class="fas fa-home"></i
             ><span class="sidebar-text">Menu principal</span></a
           >
         </div>
         <div class="page-container">
           <h3 class="title-section">Administración</h3>
-          <a id="inventario-item" class="item-side" href="inventario.html"
+          <a id="inventario-item" class="item-side" href=""
             ><i class="fas fa-box"></i
             ><span class="sidebar-text">Inventario</span>
             <i class="fas fa-chevron-down abajo"></i></a
           >
           <div id="inventario-submenu" class="submenu">
-            <a class="item-side sub" href="inventario-lista.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Lista de Inventario</span>
             </a>
-            <a class="item-side sub" href="agregar-producto.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Producto</span>
             </a>
           </div>
-          <a class="item-side" href="reseñas.html"
+          <a class="item-side" href=""
             ><i class="fas fa-clipboard-list"></i
             ><span class="sidebar-text">Opiniones</span></a
           >
-          <a class="item-side" href="prubas.html"
+          <a class="item-side" href=""
             ><i class="fas fa-history"></i
             ><span class="sidebar-text">Historial</span></a
           >
-          <a id="ordenes" class="item-side" href="ordenes.html"
+          <a id="ordenes" class="item-side" href=""
             ><i class="fas fa-truck"></i
             ><span class="sidebar-text">Gestor de Ordenes</span>
             <i class="fas fa-chevron-down abajo" ></i></a
           >
           <div id="ordenes-submenu" class="submenu">
-            <a class="item-side sub" href="inventario-lista.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Lista de Ordenes</span>
             </a>
-            <a class="item-side sub" href="agregar-producto.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Orden</span>
             </a>
@@ -282,11 +282,11 @@
             <i class="fas fa-chevron-down abajo" ></i></a
           >
           <div id="configuracion-submenu" class="submenu">
-            <a class="item-side sub" href="inventario-lista.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Ver Usuarios</span>
             </a>
-            <a class="item-side sub" href="agregar-producto.html">
+            <a class="item-side sub" href="">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Usuario</span>
             </a>
@@ -307,7 +307,7 @@
         <header class="header">
           <button id="raya" class="raya"><i class="fas fa-bars"></i></button>
           <div class="title-dashh">
-            <h1 class="title-dash">{{ $title ?? 'Default Dashboard Title' }}</h1>
+            <h1 class="title-dash">{{ $title ?? 'Dashboard' }}</h1>
           </div>
         
           <div class="eliconuser">
