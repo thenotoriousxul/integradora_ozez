@@ -18,38 +18,44 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/dashmenu', function() {
+Route::get('/dash/menu', function() {
     return view('dashmenu');
 })->name('dashmenu');
 
-Route::get('/inventario', function() {
+Route::get('/dash/inventario', function() {
     return view('inventario');
 })->name('inventario');
 
-Route::get('/opiniones', function() {
+Route::get('/dash/opiniones', function() {
     return view('opiniones');
 })->name('opiniones');
 
-Route::get('/gesordenes', function() {
+Route::get('/dash/gestor/ordenes', function() {
     return view('gesordenes');
 })->name('gesordenes');
 
-Route::get('/historial', function() {
+Route::get('/dash/gestor/historial', function() {
     return view('historial');
 })->name('historial');
 
-Route::get('/formproducto', function() {
+Route::get('/dash/agregar/producto', function() {
     return view('formularioproducto');
 })->name('historial');
 
-Route::get('/formorden', function() {
+Route::get('/dash/agregar/orden', function() {
     return view('formularioorden');
 })->name('historial');
+
+Route::get('/pdf', function () {
+    return view('./pdf/pdfcompra');
+})->name('pdf.compra');
+
 
 require __DIR__.'/auth.php';

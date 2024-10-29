@@ -228,7 +228,7 @@
         <div class="menu-container">
         <div class="page-container">
           <h3 class="title-section">Menú</h3>
-          <a class="item-side" href=""
+          <a class="item-side" href="/dash/menu"
             ><i class="fas fa-home"></i
             ><span class="sidebar-text">Menu principal</span></a
           >
@@ -241,20 +241,20 @@
             <i class="fas fa-chevron-down abajo"></i></a
           >
           <div id="inventario-submenu" class="submenu">
-            <a class="item-side sub" href="">
+            <a class="item-side sub" href="/dash/inventario">
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Lista de Inventario</span>
             </a>
-            <a class="item-side sub" href="">
+            <a class="item-side sub" href="/dash/agregar/producto">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Producto</span>
             </a>
           </div>
-          <a class="item-side" href=""
+          <a class="item-side" href="/dash/opiniones"
             ><i class="fas fa-clipboard-list"></i
             ><span class="sidebar-text">Opiniones</span></a
           >
-          <a class="item-side" href=""
+          <a class="item-side" href="/dash/gestor/historial"
             ><i class="fas fa-history"></i
             ><span class="sidebar-text">Historial</span></a
           >
@@ -264,11 +264,11 @@
             <i class="fas fa-chevron-down abajo" ></i></a
           >
           <div id="ordenes-submenu" class="submenu">
-            <a class="item-side sub" href="">
+            <a class="item-side sub" href="/dash/gestor/ordenes">
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Lista de Ordenes</span>
             </a>
-            <a class="item-side sub" href="">
+            <a class="item-side sub" href="/dash/agregar/orden">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Orden</span>
             </a>

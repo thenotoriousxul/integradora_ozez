@@ -233,8 +233,6 @@ td {
 <body>
  @include('partials.navotro')
 
-    
-
     <main class="container">
         <div class="cart-header">
             <h2>Tus Productos</h2>
