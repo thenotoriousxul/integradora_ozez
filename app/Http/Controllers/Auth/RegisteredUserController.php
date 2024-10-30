@@ -54,14 +54,18 @@ class RegisteredUserController extends Controller
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
             ]);
+
         } catch (\Exception $e) {
             return back()->withErrors(['email' => 'El correo electrónico ya está en uso.']);
         }
 
-
         event(new Registered($user));
         Auth::login($user);
-        return redirect(route('dashboard', absolute: false));
-    }
 
+        if ($user->hasRole('admin')) {
+            return redirect()->route('dashmenu');
+        }
+
+        return redirect()->route('dashboard');
+    }
 }
