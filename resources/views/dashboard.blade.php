@@ -23,14 +23,7 @@
 
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
-                </li>
-                <li class="nav-item">
+                    <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <a href="#" onclick="event.preventDefault(); this.closest('form').submit();" class="nav-link text-white">
                             Cerrar Sesión
@@ -41,7 +34,7 @@
         </div>
 
         <div class="p-4 flex-grow-1">
-            @yield('contenido')
+            <h1>Iniciaste sesión</h1>
         </div>
     </div>
 
