@@ -13,8 +13,7 @@
         body, main, .imginicio, .catalogo-gallery, .product-gallery, .personalizacion, .nosotros {
             margin: 0; 
             padding: 0; 
-            font-family: 'Bebas Neue', cursive;
-            overflow-x: hidden;
+            font-family: 'Bebas Neue', cursive;            overflow-x: hidden;
             height: 100%; 
         }
 
