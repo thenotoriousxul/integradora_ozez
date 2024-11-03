@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-  </head> 
+  </head>
 
 <style>
     * {
@@ -52,9 +52,12 @@ body {
   background: linear-gradient(to right, #32cd32, #00fa9a);
 }
 
-.dashboard-sections {
+.dashboard-sections, .section-columns {
   display: grid;
   gap: 20px;
+}
+.section-columns
+{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -62,6 +65,7 @@ body {
   background-color: #1f2937;
   border-radius: 10px;
   padding: 20px;
+
 }
 
 .section-header {
@@ -117,8 +121,8 @@ body {
 
 </style>
   <body>
-      
-    @include('partials.sidebar', ['title' => 'INVENTARIO'])
+
+    @include('partials.sidebar', ['title' => 'PANEL DE CONTROL'])
 
         <div class="dash-info">
           <div class="card">
@@ -142,12 +146,22 @@ body {
             </div>
             <div class="section-content"></div>
           </div>
-          <div class="dashboard-section">
-            <div class="section-header">
-              <h2 class="section-title">Productos mas vendidos</h2>
+            <div class="section-columns">
+              <div class="dashboard-section">
+                <div class="section-header">
+                  <h2 class="section-title">Alertas</h2>
+                </div>
+                <div class="section-content"></div>
+              </div>
+
+              <div class="dashboard-section">
+                <div class="section-header">
+                  <h2 class="section-title">Productos mas vendidos</h2>
+                </div>
+                <div class="section-content"></div>
+              </div>
             </div>
-            <div class="section-content"></div>
-          </div>
+          
         </div>
       </main>
     </div>

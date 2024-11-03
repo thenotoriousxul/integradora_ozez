@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider"></div> 
 
     <div class="payment-info">
         <h3>Transferencia Bancaria</h3>

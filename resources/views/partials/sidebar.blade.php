@@ -237,7 +237,7 @@
           <h3 class="title-section">Administración</h3>
           <a id="inventario-item" class="item-side" href=""
             ><i class="fas fa-box"></i
-            ><span class="sidebar-text">Inventario</span>
+            ><span class="sidebar-text">Productos</span>
             <i class="fas fa-chevron-down abajo"></i></a
           >
           <div id="inventario-submenu" class="submenu">
@@ -245,6 +245,9 @@
               <i class="fas fa-list"></i>
               <span class="sidebar-text">Lista de Inventario</span>
             </a>
+            <a class="item-side sub" href="/dash/agregar/producto">
+              <i class="fas fa-plus"></i>
+              <span class="sidebar-text">Catalogo de productos</span>
             <a class="item-side sub" href="/dash/agregar/producto">
               <i class="fas fa-plus"></i>
               <span class="sidebar-text">Agregar Producto</span>

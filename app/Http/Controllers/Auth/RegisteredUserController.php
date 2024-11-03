@@ -55,6 +55,7 @@ class RegisteredUserController extends Controller
                 'password' => Hash::make($request->password),
             ]);
 
+            $user->assignRole('admin');
         } catch (\Exception $e) {
             return back()->withErrors(['email' => 'El correo electrónico ya está en uso.']);
         }

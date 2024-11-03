@@ -55,6 +55,10 @@ Route::middleware([Administrador::class])->group(function () {
     })->name('agregar.orden');
 });
 
+Route::get('prueba', function() {
+    return view('productsAdmin');
+})->name('agregar.orden');
+
 Route::get('/pdf', function () {
     return view('./pdf/pdfcompra');
 })->name('pdf.compra');
