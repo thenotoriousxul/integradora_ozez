@@ -20,9 +20,19 @@
       crossorigin="anonymous"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
-        background-color: #111827;
-        color: #fff;
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        height: 100%;
+        background-color: #111827 !important;
+        color: #fff !important;
       }
       .modal-content {
         background-color: #1f2937;
